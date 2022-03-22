@@ -35,22 +35,7 @@ mourse_alphabet = {
 }
 
 
-decodeMorse_tanslater_ = (morseCode) =>{
-    
-    let mourse_arr = String(morseCode).split(" "),
-    full_word = ""
 
-    mourse_arr.forEach((el) =>{
-        for (let [letter,mourse] of Object.entries(mourse_alphabet)){
-
-            if (el == mourse)full_word += letter;
-
-        }
-    })
-
-    return full_word
-    
-}
 
 decodeMorse = (morseCode) =>{
     
@@ -126,11 +111,6 @@ let encodeMourse = (text) =>{
         }
         return full_word 
 }
-
-
-
-
-
 
 function Main()
 {
